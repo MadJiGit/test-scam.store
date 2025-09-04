@@ -6,6 +6,7 @@
     <title>Test Scam Domain - Blocklang Testing</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="styles.css">
+    <script src="carousel.js"></script>
 </head>
 <body>
     <div class="container">
@@ -17,10 +18,35 @@
         <p><strong>Result:</strong> If you are already using the extension, you can check if it works correctly by activating the scam shield from the menu and then visiting this domain. You should see a warning on your screen like in the screenshot below</p>
         <p><strong>Note!</strong> Depending on the extension version, there may be variations in the visual appearance</p>
 
-        <h2>Screenshot Example</h2>
-        <div class="screenshot-container">
-            <img src="images/chrom_scam_detect.png" alt="Blocklang scam warning example" class="screenshot">
-            <p><em>Example of how the Blocklang extension warning appears when visiting this test domain</em></p>
+        <h2>Screenshot Examples</h2>
+        <div class="screenshot-carousel-container">
+            <div class="screenshot-carousel">
+                <div class="screenshot-slide active">
+                    <img src="images/chrome_scam_detect.png" alt="Chrome scam warning" class="screenshot">
+                    <p class="screenshot-caption">Chrome Extension Warning</p>
+                </div>
+                <div class="screenshot-slide">
+                    <img src="images/firefox_scam_detect.png" alt="Firefox scam warning" class="screenshot">
+                    <p class="screenshot-caption">Firefox Extension Warning</p>
+                </div>
+                <div class="screenshot-slide">
+                    <img src="images/safari_scam_iphone_2.png" alt="Firefox scam warning" class="screenshot">
+                    <p class="screenshot-caption">Safari Mobile Extension Warning</p>
+                </div>
+                <div class="screenshot-slide">
+                    <img src="images/safari_scam_detect.png" alt="Safari scam warning" class="screenshot">
+                    <p class="screenshot-caption">Safari Extension Warning</p>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-btn prev-btn">‹</button>
+                <div class="carousel-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="carousel-btn next-btn">›</button>
+            </div>
         </div>
 
         <div class="promo-content">
