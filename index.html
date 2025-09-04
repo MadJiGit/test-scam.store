@@ -5,124 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Scam Domain - Blocklang Testing</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: linear-gradient(135deg, #ff6b6b, #ffa500);
-            color: #333;
-        }
-        .container {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        .warning-badge {
-            background: #ff4444;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 25px;
-            display: inline-block;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .test-result {
-            background: #f8f9fa;
-            padding: 15px;
-            border-left: 4px solid #ff4444;
-            margin: 20px 0;
-        }
-        .blocklang-link {
-            background: #007bff;
-            color: white;
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-            margin: 10px 5px;
-        }
-        .blocklang-link:hover {
-            background: #0056b3;
-        }
-        .code-block {
-            background: #f4f4f4;
-            padding: 15px;
-            border-radius: 5px;
-            font-family: monospace;
-            margin: 10px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="warning-badge">TEST SCAM DOMAIN</div>
+        <a href="https://www.blocklang.org/security-check" target="_blank" class="warning-badge">TEST SCAM DOMAIN</a>
         
-        <h1>Test Scam Domain - test-scam.store</h1>
+        <h1>This is test scam domain</h1>
         
-        <p><strong>Purpose:</strong> This is a controlled test domain designed to trigger scam detection in the Blocklang browser extension. It simulates malicious behavior patterns without actually being harmful.</p>
-        
-        <h2>What This Domain Tests</h2>
-        <ul>
-            <li><strong>Critical Risk Detection</strong> - Should trigger highest risk level</li>
-            <li><strong>Scam Pattern Recognition</strong> - Tests pattern matching algorithms</li>
-            <li><strong>Extension Alert System</strong> - Verifies popup warnings work correctly</li>
-            <li><strong>API Response Handling</strong> - Tests backend scam detection service</li>
-        </ul>
-        
-        <div class="test-result">
-            <h3>Expected Test Results</h3>
-            <p><strong>Risk Level:</strong> CRITICAL (100/100)</p>
-            <p><strong>Trust Score:</strong> 0% (Dangerous)</p>
-            <p><strong>Detected Patterns:</strong></p>
-            <ul>
-                <li>Test scam domain detected</li>
-                <li>Simulated phishing patterns</li>
-                <li>High risk simulation</li>
-            </ul>
+        <p><strong>Purpose:</strong> This is a controlled test domain designed to trigger scam detection in the Blocklang browser extension, especially Chrome and Firefox. It simulates malicious behavior patterns without actually being harmful.</p>
+        <p><strong>Result:</strong> If you are already using the extension, you can check if it works correctly by activating the scam shield from the menu and then visiting this domain. You should see a warning on your screen like in the screenshot below</p>
+        <p><strong>Note!</strong> Depending on the extension version, there may be variations in the visual appearance</p>
+
+        <h2>Screenshot Example</h2>
+        <div class="screenshot-container">
+            <img src="images/chrom_scam_detect.png" alt="Blocklang scam warning example" class="screenshot">
+            <p><em>Example of how the Blocklang extension warning appears when visiting this test domain</em></p>
+        </div>
+
+        <div class="promo-content">
+            <div class="promo-header">
+                <h2 class="promo-title">Want Continuous Protection?</h2>
+                <p class="promo-subtitle">Get our browser extension for real-time security warnings while you browse, from official web stores</p>
+                <div class="store-badges">
+                    <a href="https://apps.apple.com/app/id6747637233" target="_blank" rel="noopener noreferrer">
+                        <img src="images/apple-store.svg" alt="Download on the App Store">
+                    </a>
+                    <a href="https://chromewebstore.google.com/detail/jhaaififdgohacmbigmellnhiihiidee" target="_blank" rel="noopener noreferrer">
+                        <img src="images/chrome-store-469.png" alt="Available on Chrome Web Store">
+                    </a>
+                    <a href="https://addons.mozilla.org/en-GB/firefox/addon/search-language-filter/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/firefox-icon.png" alt="Available on Firefox Add-ons">
+                    </a>
+                </div>
+            </div>
         </div>
         
-        <h2>How to Test</h2>
-        <ol>
-            <li>Install the Blocklang browser extension</li>
-            <li>Enable scam protection in extension settings</li>
-            <li>Visit this domain (test-scam.store)</li>
-            <li>Observe the warning popup/notification</li>
-            <li>Check extension logs for detection details</li>
-        </ol>
-        
-        <h2>Get Blocklang Extension</h2>
-        <a href="https://chrome.google.com/webstore/detail/blocklang" class="blocklang-link" target="_blank">
-            Chrome Web Store
-        </a>
-        <a href="https://addons.mozilla.org/firefox/addon/blocklang" class="blocklang-link" target="_blank">
-            Firefox Add-ons
-        </a>
-        <a href="https://apps.apple.com/app/blocklang" class="blocklang-link" target="_blank">
-            Safari Extension
-        </a>
-        
-        <h2>Technical Details</h2>
-        <p>This domain is hardcoded in the Blocklang API to return:</p>
-        <div class="code-block">
-            riskLevel: 'critical'<br>
-            totalScore: 100<br>
-            urgencyScore: 30<br>
-            paymentRisk: 40<br>
-            socialEngineering: 30
+        <div class="more-info">
+            <h2>More Information</h2>
+            <p>Learn more about BlockLang and how it protects you from scam websites:</p>
+            <a href="https://blocklang.org" class="blocklang-link" target="_blank">
+                Visit BlockLang
+            </a>
         </div>
-        
-        <h2>More Information</h2>
-        <p>Learn more about Blocklang and how it protects you from scam websites:</p>
-        <a href="https://blocklang.org" class="blocklang-link" target="_blank">
-            Visit Blocklang.org
-        </a>
         
         <hr style="margin: 40px 0;">
         
         <p><small><strong>Disclaimer:</strong> This is a legitimate test domain used for security testing purposes only. It poses no actual threat and is used to verify the functionality of scam detection systems.</small></p>
+
+        <footer class="footer">
+            <p>&copy; 2025 BlockLang. Protecting users from online threats.</p>
+        </footer>
     </div>
 </body>
 </html>
